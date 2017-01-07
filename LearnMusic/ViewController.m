@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HttpServices.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[HttpServices instance]getTutorials:^(NSDictionary * _Nullable dataDict, NSString * _Nullable errMessage) {
+        if(dataDict) {
+            NSLog(@"Dictionary:%@", dataDict.debugDescription);
+        }else if (errMessage){
+            //display alert to user
+        }
+    }];
+    
 }
 
 
