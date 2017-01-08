@@ -14,6 +14,8 @@
 		E774FA011E2066C600B45C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E774FA001E2066C600B45C37 /* Assets.xcassets */; };
 		E774FA041E2066C600B45C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E774FA021E2066C600B45C37 /* LaunchScreen.storyboard */; };
 		E774FA0E1E20672300B45C37 /* HttpServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E774FA0D1E20672300B45C37 /* HttpServices.m */; };
+		E774FA121E21E39000B45C37 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E774FA111E21E39000B45C37 /* VideoCell.m */; };
+		E774FA161E21E90F00B45C37 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E774FA151E21E90F00B45C37 /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		E774FA051E2066C600B45C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E774FA0C1E20672300B45C37 /* HttpServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpServices.h; sourceTree = "<group>"; };
 		E774FA0D1E20672300B45C37 /* HttpServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpServices.m; sourceTree = "<group>"; };
+		E774FA101E21E39000B45C37 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		E774FA111E21E39000B45C37 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		E774FA141E21E90F00B45C37 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		E774FA151E21E90F00B45C37 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		E774F9F31E2066C500B45C37 /* LearnMusic */ = {
 			isa = PBXGroup;
 			children = (
+				E774FA131E21E8F900B45C37 /* Model */,
+				E774FA0F1E21E36B00B45C37 /* View */,
 				E774FA0B1E2066EB00B45C37 /* Services */,
 				E774F9F71E2066C500B45C37 /* AppDelegate.h */,
 				E774F9F81E2066C500B45C37 /* AppDelegate.m */,
@@ -90,6 +98,24 @@
 				E774FA0D1E20672300B45C37 /* HttpServices.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		E774FA0F1E21E36B00B45C37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E774FA101E21E39000B45C37 /* VideoCell.h */,
+				E774FA111E21E39000B45C37 /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E774FA131E21E8F900B45C37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E774FA141E21E90F00B45C37 /* Video.h */,
+				E774FA151E21E90F00B45C37 /* Video.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E774F9FC1E2066C600B45C37 /* ViewController.m in Sources */,
+				E774FA121E21E39000B45C37 /* VideoCell.m in Sources */,
 				E774FA0E1E20672300B45C37 /* HttpServices.m in Sources */,
+				E774FA161E21E90F00B45C37 /* Video.m in Sources */,
 				E774F9F91E2066C500B45C37 /* AppDelegate.m in Sources */,
 				E774F9F61E2066C500B45C37 /* main.m in Sources */,
 			);
@@ -321,6 +349,7 @@
 				E774FA0A1E2066C600B45C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
